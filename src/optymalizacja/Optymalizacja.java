@@ -439,8 +439,6 @@ public class Optymalizacja {
             sum += m[i];
         }
         System.out.println("Łączna długość łańcuchów m[] =  " + sum);
-        double avg = 0;
-        for (int test=0; test<5;test++) {
         Population population = new Population(k, n);
         Population new_population = new Population(k, n);
         for (int i = 0; i < k; i++) {
@@ -710,9 +708,5 @@ public class Optymalizacja {
                 System.out.println("Błąd.");
                 System.exit(0);
         }
-        avg+=avg(population, k, n, A, w);
-        }
-        avg = avg/5;
-        System.out.println("AVG: "+avg);
     }
 }
